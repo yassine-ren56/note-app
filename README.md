@@ -17,7 +17,7 @@ A sophisticated, secure, and beautifully designed notes application with real-ti
 ### Landing Page
 A stunning welcome page that showcases the app's features and invites users to get started.
 
-![Landing Page]("https://github.com/user-attachments/assets/d50d316d-1344-40d8-ac5a-50fa72570a6c)
+![Landing Page](https://github.com/user-attachments/assets/be187d72-905f-42b2-b640-97243e66fdd0)
 
 ### Sign Up
 Create an account with Google OAuth or email/password in a beautifully designed interface.
