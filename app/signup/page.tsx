@@ -57,35 +57,29 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900" />
-      <div className="absolute inset-0 opacity-25">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-      </div>
-
-      <div className="relative z-10 min-h-screen flex items-center justify-center p-4">
-        <Link href="/" className="absolute top-8 left-8 flex items-center gap-3 text-white/70 hover:text-white transition-all duration-300 px-4 py-2 rounded-2xl hover:bg-white/5">
-          <ArrowLeft size={22} />
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white">
+      <div className="min-h-screen flex items-center justify-center p-4">
+        <Link href="/" className="absolute top-8 left-8 flex items-center gap-3 text-white/70 hover:text-white transition-all px-4 py-2 rounded-xl hover:bg-white/5">
+          <ArrowLeft size={20} />
           <span className="font-medium">Back</span>
         </Link>
 
-        <div className="max-w-md w-full animate-slide-up">
+        <div className="max-w-md w-full">
           <div className="mb-10 text-center">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-500 to-blue-500 rounded-3xl mb-8 shadow-2xl shadow-purple-500/20 animate-pulse-glow">
-              <Sparkles className="w-10 h-10 text-white" />
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl mb-6">
+              <Sparkles className="w-8 h-8 text-white" />
             </div>
-            <h1 className="text-5xl font-bold text-white mb-4">Create Account</h1>
-            <p className="text-white/60 text-lg">Start your journey with us</p>
+            <h1 className="text-4xl font-bold mb-3">Create Account</h1>
+            <p className="text-white/60">Start your journey with us</p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/10 p-10 shadow-2xl">
+          <div className="bg-white/5 rounded-2xl border border-white/10 p-8">
             <button
               onClick={handleGoogleSignup}
               disabled={googleLoading}
-              className="w-full flex items-center justify-center gap-4 bg-white text-slate-900 py-5 px-8 rounded-3xl font-semibold text-xl hover:bg-gray-100 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 mb-8"
+              className="w-full flex items-center justify-center gap-3 bg-white text-slate-900 py-4 px-6 rounded-xl font-semibold hover:bg-gray-100 transition-all disabled:opacity-50 mb-6"
             >
-              <svg className="w-7 h-7" viewBox="0 0 24 24">
+              <svg className="w-6 h-6" viewBox="0 0 24 24">
                 <path
                   fill="#4285F4"
                   d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
@@ -106,18 +100,18 @@ export default function SignupPage() {
               {googleLoading ? 'Connecting...' : 'Continue with Google'}
             </button>
 
-            <div className="relative my-10">
+            <div className="relative my-6">
               <div className="absolute inset-0 flex items-center">
                 <div className="w-full border-t border-white/10"></div>
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-6 bg-transparent text-white/50 font-medium">or continue with email</span>
+                <span className="px-4 bg-transparent text-white/50 font-medium">or continue with email</span>
               </div>
             </div>
 
-            <form onSubmit={handleSignup} className="space-y-7">
+            <form onSubmit={handleSignup} className="space-y-5">
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-white/80 mb-3">
+                <label htmlFor="email" className="block text-sm font-semibold text-white/80 mb-2">
                   Email Address
                 </label>
                 <input
@@ -125,14 +119,14 @@ export default function SignupPage() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-6 py-5 bg-white/5 border border-white/10 rounded-3xl text-white placeholder-white/40 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300 text-lg"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
                   required
                   placeholder="you@example.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="password" className="block text-sm font-semibold text-white/80 mb-3">
+                <label htmlFor="password" className="block text-sm font-semibold text-white/80 mb-2">
                   Password
                 </label>
                 <input
@@ -140,14 +134,14 @@ export default function SignupPage() {
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full px-6 py-5 bg-white/5 border border-white/10 rounded-3xl text-white placeholder-white/40 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300 text-lg"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
                   required
                   placeholder="••••••••"
                 />
               </div>
 
               <div>
-                <label htmlFor="confirmPassword" className="block text-sm font-semibold text-white/80 mb-3">
+                <label htmlFor="confirmPassword" className="block text-sm font-semibold text-white/80 mb-2">
                   Confirm Password
                 </label>
                 <input
@@ -155,14 +149,14 @@ export default function SignupPage() {
                   type="password"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
-                  className="w-full px-6 py-5 bg-white/5 border border-white/10 rounded-3xl text-white placeholder-white/40 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300 text-lg"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
                   required
                   placeholder="••••••••"
                 />
               </div>
 
               {error && (
-                <div className="bg-red-500/20 border border-red-500/30 text-red-300 px-6 py-5 rounded-3xl animate-pulse">
+                <div className="bg-red-500/20 border border-red-500/30 text-red-300 px-4 py-3 rounded-xl">
                   {error}
                 </div>
               )}
@@ -170,16 +164,16 @@ export default function SignupPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-5 px-8 rounded-3xl font-semibold text-xl hover:from-purple-700 hover:to-blue-700 focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-slate-900 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-xl hover:shadow-purple-500/30 transform hover:-translate-y-0.5"
+                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 px-6 rounded-xl font-semibold hover:from-purple-700 hover:to-blue-700 transition-all disabled:opacity-50"
               >
                 {loading ? 'Creating account...' : 'Create Account'}
               </button>
             </form>
 
-            <div className="mt-10 text-center">
-              <p className="text-white/60 text-lg">
+            <div className="mt-8 text-center">
+              <p className="text-white/60">
                 Already have an account?{' '}
-                <Link href="/login" className="text-purple-400 hover:text-purple-300 font-bold transition-colors duration-300">
+                <Link href="/login" className="text-purple-400 hover:text-purple-300 font-bold transition-colors">
                   Sign In
                 </Link>
               </p>
