@@ -17,17 +17,17 @@ A sophisticated, secure, and beautifully designed notes application with real-ti
 ### Landing Page
 A stunning welcome page that showcases the app's features and invites users to get started.
 
-![Landing Page](https://github.com/yassine-ren56/note-app/issues/2#issue-4490045171)
+![Landing Page]("https://github.com/user-attachments/assets/d50d316d-1344-40d8-ac5a-50fa72570a6c)
 
 ### Sign Up
 Create an account with Google OAuth or email/password in a beautifully designed interface.
 
-![Sign Up](https://github.com/yassine-ren56/note-app/issues/3#issue-4490052145)
+![Sign Up](https://github.com/user-attachments/assets/08b8cfb0-f382-4569-b1b9-8363cf877df3)
 
 ### Dashboard
 Your personal notes dashboard with search, tags, and real-time updates.
 
-![Dashboard](https://github.com/yassine-ren56/note-app/issues/4#issue-4490056248)
+![Dashboard](https://github.com/user-attachments/assets/41a5b996-c043-4f10-b780-bf4399c73625)
 
 ## Tech Stack
 
